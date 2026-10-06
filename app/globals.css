@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* Wariant dark: nie podąża za trybem telefonu — tylko za klasą .dark, której nie używamy. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Paleta inspirowana wnętrzem salonu: białe ściany, szałwiowa zieleń szafek,
+   ciepłe drewno, czarne akcenty i czerwień nożyczek z logo. */
+@theme {
+  --color-cream: #faf8f4;
+  --color-linen: #f2eee6;
+  --color-sage-50: #f1f4ef;
+  --color-sage-100: #e3e9df;
+  --color-sage-300: #a9b8a3;
+  --color-sage-500: #7a8c74;
+  --color-sage-700: #56664f;
+  --color-sage-900: #34402f;
+  --color-oak: #b98a5e;
+  --color-oak-light: #e8d6c2;
+  --color-ink: #1d1d1b;
+  --color-muted: #5f5e59;
+  --color-scarlet: #d7261e;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-cormorant), ui-serif, Georgia, serif;
+}
+
+/* "light" zostaje, gdy przeglądarka nie rozumie "only". "only light" wyłącza
+   automatyczne przyciemnianie w Chrome, Samsung Internet i podobnych. */
+:root {
+  color-scheme: light;
+  color-scheme: only light;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  color-scheme: light;
+  color-scheme: only light;
+  background-color: var(--color-cream);
+}
+
+body {
+  color-scheme: light;
+  color-scheme: only light;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+textarea,
+select,
+button {
+  color-scheme: light;
+  color-scheme: only light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root,
+  html,
+  body {
+    color-scheme: light;
+    color-scheme: only light;
+    background-color: #faf8f4;
+    color: #1d1d1b;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
