@@ -33,10 +33,10 @@ export default function Header() {
         scrolled || open ? "bg-cream/95 shadow-[0_1px_0_rgba(0,0,0,0.06)] backdrop-blur" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:h-20 sm:px-6">
+      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:h-28 sm:px-6">
         <a href="#top" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <Image src="/images/logo.png" alt="MaDo Hair Studio — logo" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" priority />
-          <span className="font-display text-xl font-semibold tracking-wide sm:text-2xl">MaDo Hair Studio</span>
+          <Image src="/images/logo.png" alt="MaDo Hair Studio — logo" width={160} height={160} className="h-14 w-14 sm:h-20 sm:w-20" priority />
+          <span className="brand-wordmark font-logo">MaDo Hair Studio</span>
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Główna nawigacja">
@@ -71,7 +71,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="h-[calc(100dvh-4rem)] border-t border-sage-100 bg-cream px-6 pb-10 pt-6 lg:hidden" aria-label="Menu mobilne">
+        <nav className="h-[calc(100dvh-5rem)] border-t border-sage-100 bg-cream px-6 pb-10 pt-6 sm:h-[calc(100dvh-7rem)] lg:hidden" aria-label="Menu mobilne">
           <ul className="space-y-1">
             {links.map((l) => (
               <li key={l.href}>

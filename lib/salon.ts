@@ -95,7 +95,7 @@ export const services: ServiceGroup[] = [
   },
 ];
 
-export const team = ["Magda", "Dorota", "Klaudia"];
+export const team = ["Dorota", "Magda", "Klaudia"];
 
 // Prawdziwe opinie z Booksy — przed publikacją warto potwierdzić z salonem, które wyróżnić.
 export const reviews = [

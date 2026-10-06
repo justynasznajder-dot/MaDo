@@ -20,7 +20,7 @@ function Star() {
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-24 sm:pt-28">
+    <section id="top" className="relative overflow-hidden pt-28 sm:pt-36">
       <div
         className="absolute inset-x-0 top-0 -z-10 h-[78%] bg-gradient-to-b from-sage-50 to-cream"
         aria-hidden
@@ -32,7 +32,7 @@ export function Hero() {
             Włosy, w których czujesz się <em className="text-sage-700">sobą</em>.
           </h1>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-muted">
-            Strzyżenie, koloryzacja i pielęgnacja w jasnym, spokojnym wnętrzu przy ul. Bednorza.
+            Strzyżenie, koloryzacja i pielęgnacja w jasnym, spokojnym wnętrzu w Pszczynie przy ul. Bednorza.
             Do każdej osoby podchodzimy indywidualnie.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

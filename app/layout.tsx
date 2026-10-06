@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Cormorant_Garamond, Inter, Oswald } from "next/font/google";
 import { salon } from "@/lib/salon";
 import "./globals.css";
 
@@ -8,6 +8,12 @@ const cormorant = Cormorant_Garamond({
   subsets: ["latin", "latin-ext"],
   weight: ["500", "600", "700"],
   variable: "--font-cormorant",
+  display: "swap",
+});
+const oswald = Oswald({
+  subsets: ["latin", "latin-ext"],
+  weight: ["500"],
+  variable: "--font-oswald",
   display: "swap",
 });
 
@@ -71,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="pl"
-      className={`${inter.variable} ${cormorant.variable}`}
+      className={`${inter.variable} ${cormorant.variable} ${oswald.variable}`}
       style={{ colorScheme: "only light", backgroundColor: lightCanvas }}
     >
       <body className="font-sans" style={{ colorScheme: "only light", backgroundColor: lightCanvas, color: "#1d1d1b" }}>

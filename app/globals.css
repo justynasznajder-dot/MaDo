@@ -22,6 +22,26 @@
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-cormorant), ui-serif, Georgia, serif;
+  --font-logo: var(--font-oswald), ui-sans-serif, system-ui, sans-serif;
+}
+
+.brand-wordmark {
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 380px) {
+  .brand-wordmark {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  .brand-wordmark {
+    font-size: 2.15rem;
+  }
 }
 
 /* "light" zostaje, gdy przeglądarka nie rozumie "only". "only light" wyłącza
@@ -35,7 +55,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 7.5rem;
   color-scheme: light;
   color-scheme: only light;
   background-color: var(--color-cream);
